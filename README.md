@@ -63,9 +63,9 @@ This project used a relatively small dataset compared to the scale of India. To 
 
 #### Outline of project
 
-- [Link to notebook 1]()
-- [Link to notebook 2]()
-- [Link to notebook 3]()
+https://github.com/abhi86031/Last-Mile-Logistics-for-Rural-India/blob/main/Last%20Mile%20Logistics%20-%20Nuh%20Village.ipynb
 
 
 ##### Contact and Further Information
+Abhinav Kumar
+email id - singh2abhi@gmail.com
