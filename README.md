@@ -2,20 +2,20 @@
 Submitted By - Abhinav Kumar
 
 #### Executive summary
-This project explores optimal multi-modal logistics solutions tailored for rural India, where infrastructure limitations remain a persistent challenge. Rural regions hold untapped economic potential worth billions and deserve efficient, reliable delivery systems comparable to urban centres. Strengthening logistics in these areas can unlock significant opportunities for commerce, public services, and overall development. 
+This project investigates data-driven, multi-modal logistics solutions for rural India, where infrastructure gaps and connectivity issues continue to hinder growth. By integrating machine learning with optimisation techniques, the study demonstrates how villages can be clustered, depots strategically placed, and delivery routes optimised for cost-effectiveness and efficiency. Rural India holds significant untapped potential for e-commerce, public services, and development initiatives, and improving logistics in these areas is essential for unlocking that value. 
 
 
 #### Rationale
 Why should anyone care about this question?
 
-Rural India faces multiple obstacles in logistics management, including poor infrastructure, inadequate road mapping, fragmented transport systems, and unreliable delivery arrangements. The absence of modern logistics hampers the distribution of essential goods and services, forcing communities to depend on ad-hoc solutions. By bridging this gap, there is tremendous scope to improve public distribution systems, healthcare accessibility, and e-commerce penetration. Effectively integrating rural markets with the rest of the country could drive exponential socio-economic growth. 
+Rural India’s logistics systems face critical bottlenecks, including poor road infrastructure, incomplete mapping, fragmented transport options, and unreliable last-mile delivery. These constraints make the distribution of goods, healthcare supplies, and government benefits both slow and inefficient. By applying data science and optimisation frameworks, this project highlights pathways to bridge these gaps, enabling equitable access, strengthening public distribution systems, and expanding e-commerce penetration. The effective integration of rural supply chains with national logistics networks can drive inclusive socio-economic growth. 
 
 #### Research Question
 What are you trying to answer?
 
 This study addresses key challenges such as:
 
-  Clustering and optimisation of pin codes.
+  Clustering and optimisation using pincode datasets.
   Mapping transport routes and resources to reduce or avoid multiple mode changes.
   Predicting delivery timelines with higher accuracy.
   Identifying inefficiencies and minimising logistical bottlenecks.
@@ -25,16 +25,24 @@ This study addresses key challenges such as:
 #### Data Sources
 What data will you use to answer you question?
 
-https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/001/551/original/delhivery_data.csv?1642751181
+Sample village coordinates for Nuh district (10 representative villages).
 
-https://www.kaggle.com/datasets/nayanack/delhivery
+Sample Delhivery delivery dataset: Delhivery Kaggle Dataset
 
-https://www.data.gov.in/catalog/all-india-pincode-directory-through-webservice
+Village and road network data via OSMnx (OpenStreetMap)
 
 #### Methodology
 What methods are you using to answer the question?
 
-A Random Forest model has been applied to handle the complexity of logistics data and to generate predictive insights that can support robust decision-making.
+Following methods were used:-
+
+  Clustering: KMeans clustering on village coordinates to identify optimal delivery hubs.
+
+  For Routing - NetworkX shortest-path analysis for intra-village delivery; OR-Tools optional for advanced routing.
+
+  Random Forest regression on sample delivery data to predict delivery times based on distance and package weight.
+
+  For Visualization - Folium maps for village locations, Matplotlib/Seaborn for clusters, paths, feature importance, and correlation heatmaps.
 
 #### Results
 What did your research find?
@@ -44,10 +52,14 @@ The study demonstrates the importance of adopting flexible and reliable machine 
 #### Next steps
 What suggestions do you have for next steps?
 
-This project used a relatively small dataset compared to the scale of India. To achieve more accurate and generalisable results, future work should involve:
-  Curating comprehensive, nation-wide datasets.
-  Performing large-scale analyses that capture the full diversity of rural logistics challenges.
-  Exploring hybrid models and simulation approaches for improved delivery planning.
+This project used a relatively small dataset compared to the scale of India. To achieve more accurate and generalisable results, future work need to involve:
+  Expand dataset to include all villages of India for higher accuracy.
+
+  Integrate real Delhivery shipment data for improved machine learning predictions.
+
+  Explore hybrid routing methods combining NetworkX and OR-Tools for scalable solutions.
+
+  Implement a full Streamlit dashboard for interactive analysis and stakeholder presentation.
 
 #### Outline of project
 
