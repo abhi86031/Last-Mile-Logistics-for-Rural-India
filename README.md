@@ -31,6 +31,7 @@ Sample Delhivery delivery dataset: Delhivery Kaggle Dataset
 
 Village and road network data via OSMnx (OpenStreetMap)
 
+
 #### Methodology
 What methods are you using to answer the question?
 
@@ -44,10 +45,12 @@ Following methods were used:-
 
   For Visualization - Folium maps for village locations, Matplotlib/Seaborn for clusters, paths, feature importance, and correlation heatmaps.
 
+
 #### Results
 What did your research find?
 
 The study demonstrates the importance of adopting flexible and reliable machine learning models for complex rural logistics networks. The insights highlight how predictive modelling can streamline last-mile delivery, reduce inefficiencies, and improve the reliability of logistics operations in rural India.
+
 
 #### Next steps
 What suggestions do you have for next steps?
@@ -60,6 +63,7 @@ This project used a relatively small dataset compared to the scale of India. To 
   Explore hybrid routing methods combining NetworkX and OR-Tools for scalable solutions.
 
   Implement a full Streamlit dashboard for interactive analysis and stakeholder presentation.
+
 
 #### Outline of project
 
